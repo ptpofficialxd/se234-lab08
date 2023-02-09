@@ -10,7 +10,7 @@ jobs:
       - name: copy file to serer
         uses: appleboy/scp-action@master
         with:
-          host: ${{secret.HOST}}
+          host: ${{secrets.HOST}}
           username: ${{secrets.SSH_USER_NAME}}
           port: ${{secrets.SSH_PORT}}
           key: ${{secrets.SSH_KEY}}
