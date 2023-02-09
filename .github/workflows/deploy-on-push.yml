@@ -12,7 +12,7 @@ jobs:
         with:
           host: ${{secrets.HOST}}
           username: ${{secrets.SSH_USER_NAME}}
-          port: ${{serets.SSH_PORT}}
+          port: ${{secrets.SSH_PORT}}
           key: ${{secrets.SSH_KEY}}
           source: "./html/*"
           target: "/var/www/html"
